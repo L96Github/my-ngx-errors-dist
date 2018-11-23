@@ -1,6 +1,6 @@
 import { Directive, Input } from "@angular/core";
 import { FormGroupDirective } from "@angular/forms";
-import { BehaviorSubject } from "rxjs-compat/BehaviorSubject";
+import { BehaviorSubject } from "rxjs";
 import { toArray } from "./utils/toArray";
 var NgxErrorsDirective = /** @class */ (function () {
     function NgxErrorsDirective(form) {
