@@ -1,6 +1,6 @@
 import { AfterViewInit, OnChanges, OnDestroy } from "@angular/core";
 import { AbstractControl, FormGroupDirective } from "@angular/forms";
-import { BehaviorSubject } from "rxjs-compat/BehaviorSubject";
+import { BehaviorSubject } from "rxjs";
 import { ErrorDetails, ErrorOptions } from "./ngxerrors";
 export declare class NgxErrorsDirective implements OnChanges, OnDestroy, AfterViewInit {
     private form;
