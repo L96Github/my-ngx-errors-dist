@@ -1,15 +1,15 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('rxjs'), require('rxjs/operators'), require('@angular/forms'), require('rxjs-compat/BehaviorSubject')) :
-	typeof define === 'function' && define.amd ? define(['exports', '@angular/core', 'rxjs', 'rxjs/operators', '@angular/forms', 'rxjs-compat/BehaviorSubject'], factory) :
-	(factory((global.ngxerrors = global.ngxerrors || {}),global._angular_core,global.rxjs,global.rxjs_operators,global._angular_forms,global.rxjsCompat_BehaviorSubject));
-}(this, (function (exports,_angular_core,rxjs,rxjs_operators,_angular_forms,rxjsCompat_BehaviorSubject) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('rxjs'), require('rxjs/operators'), require('@angular/forms')) :
+	typeof define === 'function' && define.amd ? define(['exports', '@angular/core', 'rxjs', 'rxjs/operators', '@angular/forms'], factory) :
+	(factory((global.ngxerrors = global.ngxerrors || {}),global._angular_core,global.rxjs,global.rxjs_operators,global._angular_forms));
+}(this, (function (exports,_angular_core,rxjs,rxjs_operators,_angular_forms) { 'use strict';
 
 var toArray = function (value) { return Array.isArray(value) ? value : [value]; };
 
 var NgxErrorsDirective = /** @class */ (function () {
     function NgxErrorsDirective(form) {
         this.form = form;
-        this.subject = new rxjsCompat_BehaviorSubject.BehaviorSubject(null);
+        this.subject = new rxjs.BehaviorSubject(null);
         this.ready = false;
     }
     Object.defineProperty(NgxErrorsDirective.prototype, "errors", {
